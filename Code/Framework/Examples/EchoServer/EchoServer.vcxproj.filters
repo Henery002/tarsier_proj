@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{988913a7-c594-49c0-b49e-8626af5de98c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Acceptor">
+      <UniqueIdentifier>{dce4f83f-cda8-4d6b-bfcc-4a11330c49ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EchoServer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="EchoAcceptor.cpp">
+      <Filter>Acceptor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="EchoServer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="EchoAcceptor.h">
+      <Filter>Acceptor</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

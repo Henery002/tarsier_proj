@@ -1,0 +1,44 @@
+import "Net/NetProto.proto";
+
+option cc_generic_services = true;
+
+// 后门错误码类型
+enum ERR_BACKDOOR_TYPE
+{
+    ERR_BACKDOOR_INCORRECT_PWD = 1; // 密码错误
+    ERR_BACKDOOR_UNAUTHORIZED = 2; // 未授权
+}
+
+// 后门命令类型
+enum CMD_BACKDOOR_TYPE
+{
+    CMD_BACKDOOR_AUTH_REQ = 1001; // 授权请求
+    CMD_BACKDOOR_AUTH_RSP = 1002; // 授权回应
+    CMD_BACKDOOR_INPUT_REQ = 1003; // 输入请求
+    CMD_BACKDOOR_INPUT_RSP = 1004; // 输入回应
+}
+
+// 授权请求
+message BackdoorAuthReq
+{
+    optional string pwd = 1; // 密码
+}
+
+// 授权回应
+message BackdoorAuthRsp {}
+
+// 输入请求
+message BackdoorInputReq
+{
+    optional string input = 1; // 输入
+}
+
+// 输入回应
+message BackdoorInputRsp {}
+
+// 后门服务
+service BackdoorService
+{ 
+    rpc Auth(BackdoorAuthReq) returns (BackdoorAuthRsp) { option (method_id) = 1001; };
+    rpc Input(BackdoorInputReq) returns (BackdoorInputRsp) { option (method_id) = 1003; };
+}

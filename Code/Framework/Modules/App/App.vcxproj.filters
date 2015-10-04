@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{5b721d12-8080-4fad-bebc-cafe856ba674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Service">
+      <UniqueIdentifier>{bc9bda0c-5274-4169-9aab-9c8a7a0eaeb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Acceptor">
+      <UniqueIdentifier>{939c26f0-f196-4d96-b318-d6719328710c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BackdoorAcceptor.h">
+      <Filter>Acceptor</Filter>
+    </ClInclude>
+    <ClInclude Include="BackdoorServiceImpl.h">
+      <Filter>Service</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BackdoorAcceptor.cpp">
+      <Filter>Acceptor</Filter>
+    </ClCompile>
+    <ClCompile Include="BackdoorServiceImpl.cpp">
+      <Filter>Service</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

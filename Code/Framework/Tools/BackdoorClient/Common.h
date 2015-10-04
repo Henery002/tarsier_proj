@@ -1,0 +1,9 @@
+#ifndef BACKDOORCLIENT_COMMON_H_
+#define BACKDOORCLIENT_COMMON_H_
+
+#include "App/App.h"
+
+// 后门服务默认服务端口
+#define BACKDOORCLIENT_DEFAULT_SERVICE_PORT 30000
+
+#endif // BACKDOORCLIENT_COMMON_H_

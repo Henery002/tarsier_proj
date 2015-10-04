@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{8f1043cc-5481-49fa-9635-f8645b6cddec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{84bb9d9b-69f0-4208-ada7-82ed0d2887d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Queue">
+      <UniqueIdentifier>{eea1ffa3-317b-4c5a-8d26-f46592b52669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{0ae102ef-aae5-474a-9924-c3e4a1e625b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pattern">
+      <UniqueIdentifier>{72a02440-209f-457c-9405-51198aa0bba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Allocator">
+      <UniqueIdentifier>{e8f57c50-9127-45f8-bdde-5fbda439ae7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="MemAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="MemGuard.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocator.h">
+      <Filter>Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="Std.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="MemAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="MemGuard.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+import "google/protobuf/descriptor.proto";
+
+option cc_generic_services = true;
+
+// 方法选项扩展
+extend google.protobuf.MethodOptions
+{
+    optional int32 method_id = 2000; // 方法ID, 对应命令字
+}
+
+// 数据包类型
+enum PACKET_TYPE
+{
+    PACKET_INVALID = -1;
+    PACKET_REQUEST = 0; // 请求
+    PACKET_RESPONSE = 1; // 回应
+    PACKET_NOTIFY = 2; // 通知
+    NUM_PACKET_TYPE = 3;
+}
+
+// 数据包
+message Packet
+{
+    optional fixed32 size = 1; // 包大小
+    optional PACKET_TYPE type = 2  [default = PACKET_INVALID]; // 类型
+    optional uint64 seq = 3; // 序列号
+    optional int32 cmd = 4; // 命令字
+    optional int32 err = 5; // 错误码
+    optional string body = 6; // 包体数据
+    optional string extra = 7; // 额外数据
+}
+
+// 数据包大小
+message PacketSize
+{
+    optional fixed32 size = 1; // 包大小
+}

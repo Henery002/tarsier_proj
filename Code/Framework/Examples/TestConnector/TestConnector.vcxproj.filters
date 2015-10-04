@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{b7f7ba81-9971-44ef-8ced-738b3c66d045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Backend">
+      <UniqueIdentifier>{e4d12407-fcbf-4bff-9f83-201e45b489d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TestConnector.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TestBackend.h">
+      <Filter>Backend</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TestConnector.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBackend.cpp">
+      <Filter>Backend</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

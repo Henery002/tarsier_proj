@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{0026342f-5016-4bf0-abb0-bc1729220da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connection">
+      <UniqueIdentifier>{47bb2e07-b6ad-4da5-8c33-bafdbd5b44ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Acceptor">
+      <UniqueIdentifier>{8e0ad8a8-cfa0-4171-b5e8-52310ccf1abb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connector">
+      <UniqueIdentifier>{5abd93db-5326-4c25-9bd5-5523857b092f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{1caec02a-befe-4ed4-83ad-fbe6fe71c9c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{9bb7526a-ffad-42e0-9c09-b4c167461264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Linux">
+      <UniqueIdentifier>{8e229d63-7218-4acc-831a-1bef3560ae6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket">
+      <UniqueIdentifier>{9830d291-0fce-4852-b749-c9b99a258196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{4fe2f43c-c51a-4a4a-a3fc-41860de5efa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rpc">
+      <UniqueIdentifier>{0747847e-67ae-4af1-923f-8aa20d3fcfe3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Net.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.h">
+      <Filter>Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="Connector.h">
+      <Filter>Connector</Filter>
+    </ClInclude>
+    <ClInclude Include="Acceptor.h">
+      <Filter>Acceptor</Filter>
+    </ClInclude>
+    <ClInclude Include="AcceptorProxy.h">
+      <Filter>Acceptor</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\IocpAcceptor.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Linux\EpollAcceptor.h">
+      <Filter>Platform\Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="Linux\EpollConnection.h">
+      <Filter>Platform\Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketProxy.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\IocpConnection.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectorProxy.h">
+      <Filter>Connector</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectConnection.h">
+      <Filter>Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtoHandler.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="RpcChannel.h">
+      <Filter>Rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="RpcController.h">
+      <Filter>Rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="RpcServer.h">
+      <Filter>Rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="RpcObject.h">
+      <Filter>Rpc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Connection.cpp">
+      <Filter>Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="Acceptor.cpp">
+      <Filter>Acceptor</Filter>
+    </ClCompile>
+    <ClCompile Include="Connector.cpp">
+      <Filter>Connector</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\IocpAcceptor.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\IocpConnection.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="AcceptorProxy.cpp">
+      <Filter>Acceptor</Filter>
+    </ClCompile>
+    <ClCompile Include="Linux\EpollAcceptor.cpp">
+      <Filter>Platform\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="Linux\EpollConnection.cpp">
+      <Filter>Platform\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="Net.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketProxy.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectorProxy.cpp">
+      <Filter>Connector</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectConnection.cpp">
+      <Filter>Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtoHandler.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="RpcChannel.cpp">
+      <Filter>Rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="RpcController.cpp">
+      <Filter>Rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="RpcServer.cpp">
+      <Filter>Rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="RpcObject.cpp">
+      <Filter>Rpc</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <TARSIER_CODE_PATH>$(MSBuildThisFileDirectory)</TARSIER_CODE_PATH>
+    <TARSIER_MODULES_PATH>$(TARSIER_CODE_PATH)\Framework\Modules</TARSIER_MODULES_PATH>
+    <TARSIER_PROTOCOL_PATH>$(TARSIER_CODE_PATH)\Framework\Protocols</TARSIER_PROTOCOL_PATH>
+    <TARSIER_THIRDPARTY_PATH>$(TARSIER_CODE_PATH)\Thirdparty</TARSIER_THIRDPARTY_PATH>
+    <TARSIER_INCLUDE_PATH>$(ProjectDir)..;$(ProjectDir)..\..;$(TARSIER_MODULES_PATH);$(TARSIER_PROTOCOL_PATH);$(BOOST_ROOT);$(TARSIER_THIRDPARTY_PATH)\protobuf-2.6.1\src</TARSIER_INCLUDE_PATH>
+    <TARSIER_LIB_PATH>$(SolutionDir)$(Configuration)</TARSIER_LIB_PATH>
+    <TARSIER_DEP_PATH>$(BOOST_ROOT)\stage\lib;$(TARSIER_THIRDPARTY_PATH)\$(Configuration)</TARSIER_DEP_PATH>
+    <TARSIER_RUNTIME_PATH>$(TARSIER_CODE_PATH)..\Runtime</TARSIER_RUNTIME_PATH>
+    <TARSIER_LINK_LIBS>Core.lib;Net.lib;App.lib;libprotobuf.lib;AppProto.lib;NetProto.lib</TARSIER_LINK_LIBS>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(TARSIER_INCLUDE_PATH);$(IncludePath)</IncludePath>
+    <LibraryPath>$(TARSIER_LIB_PATH);$(TARSIER_DEP_PATH);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="TARSIER_CODE_PATH">
+      <Value>$(TARSIER_CODE_PATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TARSIER_MODULES_PATH">
+      <Value>$(TARSIER_MODULES_PATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TARSIER_THIRDPARTY_PATH">
+      <Value>$(TARSIER_THIRDPARTY_PATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TARSIER_INCLUDE_PATH">
+      <Value>$(TARSIER_INCLUDE_PATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TARSIER_LIB_PATH">
+      <Value>$(TARSIER_LIB_PATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TARSIER_DEP_PATH">
+      <Value>$(TARSIER_DEP_PATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TARSIER_RUNTIME_PATH">
+      <Value>$(TARSIER_RUNTIME_PATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TARSIER_LINK_LIBS">
+      <Value>$(TARSIER_LINK_LIBS)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
