@@ -1,6 +1,6 @@
-﻿@echo off
+@echo off
 
-rem 切换到当前文件所在目录
+rem �л�����ǰ�ļ�����Ŀ¼
 cd /d %~dp0
 
 set Configuration=%1
