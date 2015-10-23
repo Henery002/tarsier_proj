@@ -554,7 +554,7 @@ static BOOL __stdcall _ConsoleHandler(DWORD ctrlType)
     return TRUE;
 }
 
-#endif // #if TARGET_PLATFORM
+#endif // TARGET_PLATFORM
 
 // 输入线程
 static void _InputThread()
@@ -587,7 +587,7 @@ void App::Run()
 
     boost::thread eventListenThread(_EventListenThread);
 
-#endif // #if TARGET_PLATFORM
+#endif // TARGET_PLATFORM
 
     if (!m_Daemon)
     {
@@ -611,7 +611,7 @@ void App::Run()
 
 #if TARGET_PLATFORM == PLATFORM_WINDOWS
     eventListenThread.join();
-#endif // #if TARGET_PLATFORM
+#endif // TARGET_PLATFORM
 
     LOG_NOTICE("Stoped %s.", m_AppName.c_str());
 }
